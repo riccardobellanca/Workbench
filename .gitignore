@@ -1,0 +1,57 @@
+# --- Build output ---
+bin/*
+!bin/.gitkeep
+dist/
+build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# --- Test / coverage / profiling ---
+*.test
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+*.prof
+*.pprof
+
+# --- Go workspace (locale) ---
+go.work
+go.work.sum
+
+# --- Dipendenze vendorizzate (scommentare se non si vuole committare vendor/) ---
+# vendor/
+
+# --- Configurazione locale e segreti ---
+.env
+.env.*
+!.env.example
+configs/*.local.*
+*.pem
+*.key
+*.crt
+
+# --- Log e file temporanei ---
+*.log
+tmp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# --- Air (live reload, usa tmp/ già ignorato sopra) ---
+.air.toml.local
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.iml
+.fleet/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
